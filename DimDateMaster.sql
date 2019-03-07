@@ -30,7 +30,6 @@ The ability to create fiscal dates is also available, but is not initially popul
 well.  In order to populate the Fiscal Date data you should open, read, and thoroughly
 understand the documentation contained in spUpdateFiscalYearColumnsDateMaster which is created by this script.
 
-
 SPECIAL NOTE:
 This script will also attempt to create a job and schedule to update the "IsDateActive"
 column in the DateMaster table if you choose to do so.  It will do this utilizing the MSDB datase where the jobs and
