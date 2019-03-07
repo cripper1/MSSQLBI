@@ -1,5 +1,5 @@
 /******
-Copyright (C) 2003
+Copyright (C) 2003-2019
 Created, enhanced, and edited beginning in 2003.
 By Dave Rodabaugh at Atlas Analytics. drodabaugh@AtlasAnalytics.com
 And Chris Ciappa as Atlas Analytics.  cciappa@AtlasAnalytics.com, cciappa@gmail.com
