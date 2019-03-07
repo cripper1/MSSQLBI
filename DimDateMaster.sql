@@ -4,23 +4,21 @@ Created, enhanced, and edited beginning in 2003.
 By Dave Rodabaugh at Atlas Analytics. drodabaugh@AtlasAnalytics.com
 And Chris Ciappa as Atlas Analytics.  cciappa@AtlasAnalytics.com, cciappa@gmail.com
 
-
 UPDATED AND CONSOLIDATED
 4/1/2010 Chris Ciappa
 12/21/2014  Chris Ciappa
+02/27/2019 Chris Ciappa
+03/06/2019 Chris Ciappa
 
-   This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see https://www.gnu.org/licenses/.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
 
 This script will create all necessary relational objects for a working Date Dimension
@@ -96,6 +94,30 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE FUNCTION dbo.[fnFindFYFirstDate]
+
+/****
+Copyright (C) 2003-2019
+Created, enhanced, and edited beginning in 2003.
+By Dave Rodabaugh at Atlas Analytics. drodabaugh@AtlasAnalytics.com
+And Chris Ciappa as Atlas Analytics.  cciappa@AtlasAnalytics.com, cciappa@gmail.com
+
+UPDATED AND CONSOLIDATED
+4/1/2010 Chris Ciappa
+12/21/2014  Chris Ciappa
+02/27/2019 Chris Ciappa
+03/06/2019 Chris Ciappa
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+****/
+
 (
 @FYMonthOneInNativeYear nvarchar(3),
 @MonthOfYearNumber		smallint,
@@ -142,6 +164,28 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE FUNCTION dbo.[fnFindFYLastDateOfYear]
+/****
+Copyright (C) 2003-2019
+Created, enhanced, and edited beginning in 2003.
+By Dave Rodabaugh at Atlas Analytics. drodabaugh@AtlasAnalytics.com
+And Chris Ciappa as Atlas Analytics.  cciappa@AtlasAnalytics.com, cciappa@gmail.com
+
+UPDATED AND CONSOLIDATED
+4/1/2010 Chris Ciappa
+12/21/2014  Chris Ciappa
+02/27/2019 Chris Ciappa
+03/06/2019 Chris Ciappa
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+****/
 (
 @MonthOfYearNumber		smallint,
 @FYStartMonth			nvarchar(2),
@@ -185,6 +229,28 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE FUNCTION dbo.[fnFindFYMonthOfYearNumber]
+/****
+Copyright (C) 2003-2019
+Created, enhanced, and edited beginning in 2003.
+By Dave Rodabaugh at Atlas Analytics. drodabaugh@AtlasAnalytics.com
+And Chris Ciappa as Atlas Analytics.  cciappa@AtlasAnalytics.com, cciappa@gmail.com
+
+UPDATED AND CONSOLIDATED
+4/1/2010 Chris Ciappa
+12/21/2014  Chris Ciappa
+02/27/2019 Chris Ciappa
+03/06/2019 Chris Ciappa
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+****/
 (
 @MonthOfYearNumber		smallint,
 @FYStartMonth			nvarchar(2),
@@ -218,6 +284,28 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE FUNCTION dbo.[fnFindFYQuarterOfYearNumber]
+/****
+Copyright (C) 2003-2019
+Created, enhanced, and edited beginning in 2003.
+By Dave Rodabaugh at Atlas Analytics. drodabaugh@AtlasAnalytics.com
+And Chris Ciappa as Atlas Analytics.  cciappa@AtlasAnalytics.com, cciappa@gmail.com
+
+UPDATED AND CONSOLIDATED
+4/1/2010 Chris Ciappa
+12/21/2014  Chris Ciappa
+02/27/2019 Chris Ciappa
+03/06/2019 Chris Ciappa
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+****/
 (
 @MonthOfYearNumber		smallint,
 @FYStartMonth			nvarchar(2),
@@ -266,6 +354,28 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE FUNCTION dbo.[fnFindFYQuarterStartDate]
+/****
+Copyright (C) 2003-2019
+Created, enhanced, and edited beginning in 2003.
+By Dave Rodabaugh at Atlas Analytics. drodabaugh@AtlasAnalytics.com
+And Chris Ciappa as Atlas Analytics.  cciappa@AtlasAnalytics.com, cciappa@gmail.com
+
+UPDATED AND CONSOLIDATED
+4/1/2010 Chris Ciappa
+12/21/2014  Chris Ciappa
+02/27/2019 Chris Ciappa
+03/06/2019 Chris Ciappa
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+****/
 (
 @MonthOfYearNumber		smallint,
 @FYStartMonth			nvarchar(2),
@@ -433,6 +543,28 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE FUNCTION dbo.[fnFindFYYearName]
+/****
+Copyright (C) 2003-2019
+Created, enhanced, and edited beginning in 2003.
+By Dave Rodabaugh at Atlas Analytics. drodabaugh@AtlasAnalytics.com
+And Chris Ciappa as Atlas Analytics.  cciappa@AtlasAnalytics.com, cciappa@gmail.com
+
+UPDATED AND CONSOLIDATED
+4/1/2010 Chris Ciappa
+12/21/2014  Chris Ciappa
+02/27/2019 Chris Ciappa
+03/06/2019 Chris Ciappa
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+****/
 (
 @FYMonthOneInNativeYear nvarchar(3),
 @MonthOfYearNumber		smallint,
@@ -478,8 +610,7 @@ CREATE PROCEDURE dbo.[spBuildDateMaster]
 --						 @EndDate nvarchar(50)
 /**************************************************************************************
 DESCRIPTION
-Copyright (C) 2003
-
+Copyright (C) 2003-2019
 Created, enhanced, and edited beginning in 2003.
 By Dave Rodabaugh at Atlas Analytics. drodabaugh@AtlasAnalytics.com
 And Chris Ciappa as Atlas Analytics.  cciappa@AtlasAnalytics.com, cciappa@gmail.com
@@ -487,19 +618,18 @@ And Chris Ciappa as Atlas Analytics.  cciappa@AtlasAnalytics.com, cciappa@gmail.
 UPDATED AND CONSOLIDATED
 4/1/2010 Chris Ciappa
 12/21/2014  Chris Ciappa
+02/27/2019 Chris Ciappa
+03/06/2019 Chris Ciappa
 
-   This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see https://www.gnu.org/licenses/.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
 
 This procedure creates a DateMaster table and is a version of procedure
@@ -579,9 +709,9 @@ repeatable provided that the start date passed as a parameter never changes.  In
 this table can be dropped and recreated without requiring an SSAS full process so long
 as the start date never changes.
 
-SPECIAL FOR ADS:
+SPECIAL FOR Client:
 
-(1) ADS has customer time member names in their legachy MSAS system.
+(1) Client has customer time member names in their legachy MSAS system.
 Those columns have been added to this procedure and are noted as such.
 
 (2) This procedure no longer accepts input parameters.  This table has hardcoded
@@ -656,7 +786,7 @@ CREATE TABLE dbo.[DateMaster] (
 	MonthLastDate			datetime		NULL,
 	MonthLastDateString		nvarchar(50)	NULL,
 	MonthISOMonth			nvarchar(50)	NULL,
-	LegacyCalendarMonthName nvarchar(50)    NULL, -- Specific to ADS.  Legacy
+	LegacyCalendarMonthName nvarchar(50)    NULL, -- Specific to Cient.  Legacy
                                                   -- from old MSAS cubes.
 
 /**************** Quarter Information **************************/
@@ -671,7 +801,7 @@ CREATE TABLE dbo.[DateMaster] (
 	QuarterFirstDateString	nvarchar(50)	NULL,
 	QuarterLastDate			datetime		NULL,
 	QuarterLastDateString	nvarchar(50)	NULL,
-    LegacyCalendarQuarterName nvarchar(50)  NULL, -- Specific to ADS.  Legacy
+    LegacyCalendarQuarterName nvarchar(50)  NULL, -- Specific to Cient.  Legacy
                                                   -- from old MSAS cubes.
 
 /**************** Year Information *****************************/
@@ -683,7 +813,7 @@ CREATE TABLE dbo.[DateMaster] (
 	YearLastDate			datetime		NULL,
 	YearLastDateString		nvarchar(50)	NULL,
 	LeapYear				bit				NULL,
-    LegacyCalendarYearName  nvarchar(50)    NULL, -- Specific to ADS.  Legacy
+    LegacyCalendarYearName  nvarchar(50)    NULL, -- Specific to Cient.  Legacy
                                                   -- from old MSAS cubes.
 
 /**************** FY Month Information *****************************/
@@ -699,7 +829,7 @@ CREATE TABLE dbo.[DateMaster] (
 	FYMonthLastDate					datetime		NULL,
 	FYMonthLastDateString			nvarchar(50)	NULL,
 	FYMonthISOMonth					nvarchar(50)	NULL,
-    LegacyFiscalMonthName           nvarchar(50)    NULL, -- Specific to ADS. Legacy
+    LegacyFiscalMonthName           nvarchar(50)    NULL, -- Specific to Cient. Legacy
                                                           -- from old MSAS cubes.
 
 /**************** FY Quarter Information *****************************/
@@ -710,7 +840,7 @@ CREATE TABLE dbo.[DateMaster] (
 	FYQuarterShortName				nvarchar(50)    NULL,
 	FYQuarterShortNameWithYear		nvarchar(50)	NULL,
 	FYQuarterShortNameWith2DigitYear	nvarchar(50) NULL,
-    LegacyFiscalQuarterName          nvarchar(50)    NULL, -- Specific to ADS. Legacy
+    LegacyFiscalQuarterName          nvarchar(50)    NULL, -- Specific to Cient. Legacy
                                                            -- from old MSAS cubes.
 
 /**************** FY Year Information *****************************/
@@ -722,7 +852,7 @@ CREATE TABLE dbo.[DateMaster] (
 	FYYearLastDate					datetime		NULL,
 	FYYearLastDateString			nvarchar(50)	NULL,
 	FYLeapYear						bit				NULL,
-    LegacyFiscalYearName            nvarchar(50)    NULL,  -- Specific to ADS. Legacy
+    LegacyFiscalYearName            nvarchar(50)    NULL,  -- Specific to Cient. Legacy
                                                           -- from old MSAS cubes.
 	IsDateActiveFlag				bit				NULL
 )
@@ -768,7 +898,7 @@ DECLARE @YearFirstDateString	nvarchar(50)
 DECLARE	@YearLastDate		datetime
 DECLARE @YearLastDateString		nvarchar(50)
 DECLARE	@LeapYear			bit
-DECLARE @LegacyCalendarYearName nvarchar(50) -- Specific to ADS. Legacy
+DECLARE @LegacyCalendarYearName nvarchar(50) -- Specific to Cient. Legacy
                                              -- from old MSAS cubes.
 
 /********************* Quarter Information **************************/
@@ -788,7 +918,7 @@ DECLARE @QuarterLastDateString		nvarchar(50)
 DECLARE @OldQuarterOfYearNumber		nvarchar(50)
 	SET @OldQuarterOfYearNumber = 1
 
-DECLARE @LegacyCalendarQuarterName  nvarchar(50) -- Specific to ADS. Legacy
+DECLARE @LegacyCalendarQuarterName  nvarchar(50) -- Specific to Cient. Legacy
                                                  -- from old MSAS cubes.
 
 /********************* Month Information ****************************/
@@ -809,7 +939,7 @@ DECLARE	@MonthISOMonth				nvarchar(50)
 DECLARE @OldMonthOfYearNumber		nvarchar(50)
 	SET @OldMonthOfYearNumber = 1
 
-DECLARE @LegacyCalendarMonthName    nvarchar(50) -- Specific to ADS. Legacy
+DECLARE @LegacyCalendarMonthName    nvarchar(50) -- Specific to Cient. Legacy
                                                  -- from old MSAS cubes.
 
 /********************  Week Information *****************************/
@@ -890,7 +1020,7 @@ WHILE (@LoopDate <= @EndDate)
 	IF ((@YearName % 4 = 0)  AND (@YearName % 100 != 0 OR @YearName % 400 = 0))
 		SET @LeapYear = 1 ELSE SET @LeapYear = 0
 	--PRINT '@LeapYear = ' + cast(@LeapYear AS nvarchar(10))
-	SET @LegacyCalendarYearName = 'Cal ' + cast(@YearName as nchar(4)) -- Specific to ADS. Legacy
+	SET @LegacyCalendarYearName = 'Cal ' + cast(@YearName as nchar(4)) -- Specific to Cient. Legacy
                                                      -- from old MSAS system.
 
 	/**************** Quarter Information **********************************
@@ -936,7 +1066,7 @@ WHILE (@LoopDate <= @EndDate)
 		RIGHT('0' + CAST(DATEPART(dd, @QuarterLastDate) AS NVARCHAR(2)), 2) + '/' +
 		CAST(DATEPART (yyyy, @QuarterLastDate) AS NCHAR(4))
 	SET @LegacyCalendarQuarterName = 'Cal ' + cast(@YearName as nchar(4))
-        + '-Quarter ' + cast(@QuarterOfYearNumber as nchar(4))-- Specific to ADS. Legacy
+        + '-Quarter ' + cast(@QuarterOfYearNumber as nchar(4))-- Specific to Cient. Legacy
                                              -- from old MSAS system.
 
 	/**************** Month Information **********************************
@@ -979,7 +1109,7 @@ WHILE (@LoopDate <= @EndDate)
 	--print '@MonthLastDateString = ' + @MonthLastDateString
 	SET @MonthISOMonth = @YearName + right('0' + cast(@MonthOfYearNumber as nvarchar(2) ), 2)
 	SET @LegacyCalendarMonthName = 'Cal ' + cast(@YearName as nchar(4))
-              + '-' + cast(@MonthName as nvarchar(15)) -- Specific to ADS. Legacy
+              + '-' + cast(@MonthName as nvarchar(15)) -- Specific to Cient. Legacy
                                  -- from old MSAS system.
 
 	/**************** Week Information **********************************
@@ -1084,7 +1214,7 @@ WHILE (@LoopDate <= @EndDate)
 		MonthLastDate,
 		MonthLastDateString,
 		MonthISOMonth,
-        LegacyCalendarMonthName, -- Specific to ADS. Legacy from old MSAS system.
+        LegacyCalendarMonthName, -- Specific to Cient. Legacy from old MSAS system.
 
 		QuarterID,
 		QuarterOfYearNumber,
@@ -1097,7 +1227,7 @@ WHILE (@LoopDate <= @EndDate)
 		QuarterFirstDateString,
 		QuarterLastDate,
 		QuarterLastDateString,
-        LegacyCalendarQuarterName, -- Specific to ADS. Legacy from old MSAS system.
+        LegacyCalendarQuarterName, -- Specific to Cient. Legacy from old MSAS system.
 
 		YearID,
 		YearName,
@@ -1107,7 +1237,7 @@ WHILE (@LoopDate <= @EndDate)
 		YearLastDate,
 		YearLastDateString,
 		LeapYear,
-        LegacyCalendarYearName -- Specific to ADS. Legacy from old MSAS system.
+        LegacyCalendarYearName -- Specific to Cient. Legacy from old MSAS system.
 	)
 
 	VALUES (
@@ -1149,7 +1279,7 @@ WHILE (@LoopDate <= @EndDate)
 		@MonthLastDate,
 		@MonthLastDateString,
 		@MonthISOMonth,
-        @LegacyCalendarMonthName, -- Specific to ADS. Legacy from old MSAS system.
+        @LegacyCalendarMonthName, -- Specific to Cient. Legacy from old MSAS system.
 
 		@QuarterID,
 		@QuarterOfYearNumber,
@@ -1162,7 +1292,7 @@ WHILE (@LoopDate <= @EndDate)
 		@QuarterFirstDateString,
 		@QuarterLastDate,
 		@QuarterLastDateString,
-        @LegacyCalendarQuarterName, -- Specific to ADS. Legacy from old MSAS system.
+        @LegacyCalendarQuarterName, -- Specific to Cient. Legacy from old MSAS system.
 
 		@YearID,
 		@YearName,
@@ -1172,7 +1302,7 @@ WHILE (@LoopDate <= @EndDate)
 		@YearLastDate,
 		@YearLastDateString,
 		@LeapYear,
-        @LegacyCalendarYearName -- Specific to ADS. Legacy from old MSAS system.
+        @LegacyCalendarYearName -- Specific to Cient. Legacy from old MSAS system.
 	)
 
 	--increment the date one day
@@ -1222,7 +1352,7 @@ INSERT dbo.DateMaster (
 	MonthLastDate,
 	MonthLastDateString,
 	MonthISOMonth,
-    LegacyCalendarMonthName, -- Specific to ADS. Legacy from old MSAS system.
+    LegacyCalendarMonthName, -- Specific to Cient. Legacy from old MSAS system.
 
 	QuarterID,
 	QuarterOfYearNumber,
@@ -1235,7 +1365,7 @@ INSERT dbo.DateMaster (
 	QuarterFirstDateString,
 	QuarterLastDate,
 	QuarterLastDateString,
-    LegacyCalendarQuarterName, -- Specific to ADS. Legacy from old MSAS system.
+    LegacyCalendarQuarterName, -- Specific to Cient. Legacy from old MSAS system.
 
 	YearID,
 	YearName,
@@ -1245,7 +1375,7 @@ INSERT dbo.DateMaster (
 	YearLastDate,
 	YearLastDateString,
 	LeapYear,
-    LegacyCalendarYearName, -- Specific to ADS. Legacy from old MSAS system.
+    LegacyCalendarYearName, -- Specific to Cient. Legacy from old MSAS system.
 
 	/**************** Fiscal Columns *****************************/
 	FYMonthID,
@@ -1260,7 +1390,7 @@ INSERT dbo.DateMaster (
 	FYMonthLastDate,
 	FYMonthLastDateString,
 	FYMonthISOMonth,
-	LegacyFiscalMonthName , -- Specific to ADS. Legacy
+	LegacyFiscalMonthName , -- Specific to Cient. Legacy
                                                           -- from old MSAS cubes.
 	FYQuarterID,
 	FYQuarterOfYearNumber,
@@ -1269,7 +1399,7 @@ INSERT dbo.DateMaster (
 	FYQuarterShortName,
 	FYQuarterShortNameWithYear,
 	FYQuarterShortNameWith2DigitYear,
-    LegacyFiscalQuarterName, -- Specific to ADS. Legacy
+    LegacyFiscalQuarterName, -- Specific to Cient. Legacy
 							 -- from old MSAS cubes.
 	FYYearID,
 	FYYearName,
@@ -1279,7 +1409,7 @@ INSERT dbo.DateMaster (
 	FYYearLastDate,
 	FYYearLastDateString,
 	FYLeapYear,
-    LegacyFiscalYearName  -- Specific to ADS. Legacy
+    LegacyFiscalYearName  -- Specific to Cient. Legacy
 						  -- from old MSAS cubes.
 )
 
@@ -1322,7 +1452,7 @@ VALUES (
 	NULL, --MonthLastDate,
 	'Unknown Month', --MonthLastDateString,
 	NULL, --MonthISOMonth,
-    'Unknown Month', --LegacyCalendarMonthName, -- Specific to ADS. Legacy from old MSAS system.
+    'Unknown Month', --LegacyCalendarMonthName, -- Specific to Cient. Legacy from old MSAS system.
 
 	-3000000, --QuarterID,
 	NULL, --QuarterOfYearNumber,
@@ -1335,7 +1465,7 @@ VALUES (
 	'Unknown Quarter', --QuarterFirstDateString,
 	NULL, --QuarterLastDate,
 	'Unknown Quarter', --QuarterLastDateString,
-    'Unknown Quarter', --LegacyCalendarQuarterName, -- Specific to ADS. Legacy from old MSAS system.
+    'Unknown Quarter', --LegacyCalendarQuarterName, -- Specific to Cient. Legacy from old MSAS system.
 
 	-4000000, --YearID,
 	'Unknown Year', --YearName,
@@ -1345,7 +1475,7 @@ VALUES (
 	NULL, --YearLastDate,
 	NULL, --YearLastDateString,
 	NULL, --LeapYear,
-    'Unknown Year', --LegacyCalendarYearName -- Specific to ADS. Legacy from old MSAS system.
+    'Unknown Year', --LegacyCalendarYearName -- Specific to Cient. Legacy from old MSAS system.
 
     /*********** Fiscal column unknowns **************************************/
 	-2200000, --FYMonthID
@@ -1360,7 +1490,7 @@ VALUES (
 	NULL, --FYMonthLastDate
 	'Unknown Month', --FYMonthLastDateString
 	NULL, --FYMonthISOMonth
-    'Unknown Month', --LegacyFiscalMonthName -- Specific to ADS. Legacy
+    'Unknown Month', --LegacyFiscalMonthName -- Specific to Cient. Legacy
                                                           -- from old MSAS cubes.
 
 	-3300000, --FYQuarterID
@@ -1370,7 +1500,7 @@ VALUES (
 	'Unknown Quarter', --FYQuarterShortName
 	'Unknown Quarter', --FYQuarterShortNameWithYear
 	'Unknown Quarter', --FYQuarterShortNameWith2DigitYear
-    'Unknown Quarter', --LegacyFiscalQuarterName -- Specific to ADS. Legacy
+    'Unknown Quarter', --LegacyFiscalQuarterName -- Specific to Cient. Legacy
                       -- from old MSAS cubes.
 
 	-4400000, --FYYearID
@@ -1381,7 +1511,7 @@ VALUES (
 	NULL, --FYYearLastDate
 	NULL, --FYYearLastDateString
 	NULL, --FYLeapYear
-    'Unknown Year' --LegacyFiscalYearName  -- Specific to ADS. Legacy
+    'Unknown Year' --LegacyFiscalYearName  -- Specific to Cient. Legacy
                           -- from old MSAS cubes.
 )
 
@@ -1403,8 +1533,7 @@ CREATE   PROCEDURE dbo.[spUpdateFiscalYearColumnsDateMaster]
 --					@FYStartMonth			nvarchar(2),
 --					@FYMonthOneInNativeYear nvarchar(3)
 /**************************************************************************************
-Copyright (C) 2003
-
+Copyright (C) 2003-2019
 Created, enhanced, and edited beginning in 2003.
 By Dave Rodabaugh at Atlas Analytics. drodabaugh@AtlasAnalytics.com
 And Chris Ciappa as Atlas Analytics.  cciappa@AtlasAnalytics.com, cciappa@gmail.com
@@ -1412,19 +1541,19 @@ And Chris Ciappa as Atlas Analytics.  cciappa@AtlasAnalytics.com, cciappa@gmail.
 UPDATED AND CONSOLIDATED
 4/1/2010 Chris Ciappa
 12/21/2014  Chris Ciappa
+02/27/2019 Chris Ciappa
+03/06/2019 Chris Ciappa
 
-   This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see https://www.gnu.org/licenses/.
 
 This procedure adds a fiscal calendar hierarchy to an existing DateMaster table by reading
 data from that table and updating rows with new content by populating the fiscal date
@@ -1437,9 +1566,9 @@ It performs the following steps:
 (3)  Identifies the first and last dates in the DateMaster table.
 (4)  Uses data in DateMaster to populate the fiscal standard time columns.
 
-SPECIAL FOR ADS:
+SPECIAL FOR Client:
 
-(1) ADS has customer time member names in their legacy MSAS system.
+(1) Client has customer time member names in their legacy MSAS system.
 Those columns have been added to this procedure and are noted as such.
 
 (2) This procedure no longer accepts input parameters.  Thhey have been hardcoded
@@ -1595,7 +1724,7 @@ FYYearLastDateString = @FYEndMonth + '/' + right(left(dbo.fnFindFYLastDateOfYear
 		DateMaster.MonthID					-- parameter @MonthID
 		) AS nvarchar(25) ), 8, 4),
 
--- Legacy column from ADS' old system.
+-- Legacy column from Client' old system.
 LegacyFiscalYearName = 'Fisc ' + dbo.fnFindFYYearName(
 	@FYMonthOneInNativeYear,	-- parameter @FYMonthOneInNativeYear
 	DateMaster.MonthOfYearNumber,	-- parameter @MonthOfYearNumber
@@ -1656,7 +1785,7 @@ FYQuarterShortNameWith2DigitYear = 'Q' + cast(dbo.fnFindFYQuarterOfYearNumber (
 			DateMaster.YearName			-- parameter @YearName
 			), 2),
 
--- Legacy column from ADS' old system.
+-- Legacy column from Client' old system.
 LegacyFiscalQuarterName = 'Fisc ' + dbo.fnFindFYYearName(
 	@FYMonthOneInNativeYear,	-- parameter @FYMonthOneInNativeYear
 	DateMaster.MonthOfYearNumber,	-- parameter @MonthOfYearNumber
@@ -1703,7 +1832,7 @@ FYMonthFirstDateString = DateMaster.MonthFirstDateString,
 FYMonthLastDate = DateMaster.MonthLastDate,
 FYMonthLastDateString = DateMaster.MonthLastDateString,
 
--- Legacy column from ADS' old system.
+-- Legacy column from Client' old system.
 LegacyFiscalMonthName =
 'Fisc ' + dbo.fnFindFYYearName(
 	@FYMonthOneInNativeYear,	-- parameter @FYMonthOneInNativeYear
@@ -1735,8 +1864,7 @@ GO
 
 CREATE PROCEDURE dbo.[spUpdateDateMasterActiveFlag]
 /*****
-Copyright (C) 2003
-
+Copyright (C) 2003-2019
 Created, enhanced, and edited beginning in 2003.
 By Dave Rodabaugh at Atlas Analytics. drodabaugh@AtlasAnalytics.com
 And Chris Ciappa as Atlas Analytics.  cciappa@AtlasAnalytics.com, cciappa@gmail.com
@@ -1744,19 +1872,19 @@ And Chris Ciappa as Atlas Analytics.  cciappa@AtlasAnalytics.com, cciappa@gmail.
 UPDATED AND CONSOLIDATED
 4/1/2010 Chris Ciappa
 12/21/2014  Chris Ciappa
+02/27/2019 Chris Ciappa
+03/06/2019 Chris Ciappa
 
-   This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see https://www.gnu.org/licenses/.
 
 From Chris Ciappa: This procedure is to set the IsDateActiveFlag in DateMaster
 to 1.  The IsDateActiveFlag column is used to determine selectivity
@@ -1809,6 +1937,28 @@ GO
 
 CREATE VIEW dbo.[vwDimDate]
 /****** Object:  View dbo.[vwQADimDateMaster]    Script Date: 05/28/2009 14:28:00
+Copyright (C) 2003-2019
+Created, enhanced, and edited beginning in 2003.
+By Dave Rodabaugh at Atlas Analytics. drodabaugh@AtlasAnalytics.com
+And Chris Ciappa as Atlas Analytics.  cciappa@AtlasAnalytics.com, cciappa@gmail.com
+
+UPDATED AND CONSOLIDATED
+4/1/2010 Chris Ciappa
+12/21/2014  Chris Ciappa
+02/27/2019 Chris Ciappa
+03/06/2019 Chris Ciappa
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+
 This view is generated from DateMaster to meet the OLAP needs for specific time dimensions
 which need only to show dates up to and including the current date and no future dates.
 
